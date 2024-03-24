@@ -1,0 +1,22 @@
+$breakpoints: (
+        xxl: 1400px,
+        xl: 1200px,
+        lg: 992px,
+        md: 768px,
+        sm: 576px
+);
+
+:root {
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Fonts */
+  --font-size-base: 16px;
+  --font-family: Arial, sans-serif;
+
+  /* Grid */
+  --container: 1200px;
+  --columns: 12;
+  --gutter: 30px;
+}

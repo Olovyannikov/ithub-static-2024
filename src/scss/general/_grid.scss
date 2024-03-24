@@ -1,0 +1,29 @@
+@use "sass:math";
+
+$columns: 12;
+
+.row {
+  margin: 0 calc(var(--gutter) * -1 / 2);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col,
+[class^='col-'] {
+  position: relative;
+  padding-left: calc(var(--gutter) / 2);
+  padding-right: calc(var(--gutter) / 2);
+  width: 100%;
+  background-color: pink;
+}
+
+@each $size in map-keys($breakpoints) {
+  @media (min-width: map_get($breakpoints, $size)) {
+    @for $i from 1 through $columns {
+      .col-#{$size}-#{$i} {
+        flex: 0 0 percentage(math.div($i, $columns));
+        max-width: percentage(math.div($i, $columns));
+      }
+    }
+  }
+}
