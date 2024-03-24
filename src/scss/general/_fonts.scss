@@ -1,11 +1,11 @@
-@include font-face('Bangers', '../fonts/Bangers', 400, normal);
+@include font-face('Bangers', 'Bangers', 400, normal);
 
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', 400, normal)
-@include font-face('Roboto', '../fonts/Roboto/Roboto-500', 500, normal);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-700', 700, normal);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-900', 900, normal);
+@include font-face('Roboto', 'Roboto/Roboto-Regular', 400, normal);
+@include font-face('Roboto', 'Roboto/Roboto-500', 500, normal);
+@include font-face('Roboto', 'Roboto/Roboto-700', 700, normal);
+@include font-face('Roboto', 'Roboto/Roboto-900', 900, normal);
 
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Regular-Italic', 400, italic)
-@include font-face('Roboto', '../fonts/Roboto/Roboto-500-italic', 500, italic);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-700-italic', 700, italic);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-900-italic', 900, italic);
+@include font-face('Roboto', 'Roboto/Roboto-Regular-Italic', 400, italic);
+@include font-face('Roboto', 'Roboto/Roboto-500-italic', 500, italic);
+@include font-face('Roboto', 'Roboto/Roboto-700-italic', 700, italic);
+@include font-face('Roboto', 'Roboto/Roboto-900-italic', 900, italic);

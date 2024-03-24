@@ -1,0 +1,15 @@
+-
+    var socialList = [
+        { name: 'Facebook', icon: 'fb' },
+        { name: 'Twitter', icon: 'tw' },
+        { name: 'Instagram', icon: 'in' },
+        { name: 'Pinterest', icon: 'pi' },
+        { name: 'Tumblr', icon: 'tm' }
+    ]
+
+ul.socials
+    each item in socialList
+        li.socials__item
+            a(href="https://" + item.name + ".com")
+                span.visually-hidden #{item.name}
+                +svg(item.icon, 32, 32)

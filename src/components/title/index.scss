@@ -1,0 +1,13 @@
+.title {
+  margin: 0;
+  font-family: "Bangers", var(--font-family);
+  font-size: 3.75rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+
+  @include md-block {
+    font-size: 3rem;
+  }
+}

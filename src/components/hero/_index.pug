@@ -1,1 +1,15 @@
 section.hero
+    .container.hero__container
+        .row.hero__logo
+            .col.col-xs-12
+                img.logo(src="./logo.png", width=273)
+        .hero__wrapper
+            .row.hero__title
+                .col.col-xs-12
+                    h1.title.title--1 Hiking in Norway
+            .row.hero__socials
+                .col.col-xs-12
+                    include ../socials/_index
+            .row.hero__btn
+                .col.col-xs-12
+                    +button('Read More', '#', 'primary', 'md')

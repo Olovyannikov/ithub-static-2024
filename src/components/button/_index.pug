@@ -1,0 +1,6 @@
+mixin button(children, type, variant, size, className)
+
+    if type.startsWith('http') || type.startsWith('#')
+        a(class=`btn ${variant} ${size} ${className ? className : ''}`, href=type) #{children}
+    else
+        button(class=`btn ${variant} ${size} ${className ? className : ''}`, type=type) #{children}

@@ -1,9 +1,10 @@
 $breakpoints: (
-        xxl: 1400px,
-        xl: 1200px,
-        lg: 992px,
+        xs: 0,
+        sm: 576px,
         md: 768px,
-        sm: 576px
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px,
 );
 
 :root {
@@ -13,10 +14,10 @@ $breakpoints: (
 
   /* Fonts */
   --font-size-base: 16px;
-  --font-family: Arial, sans-serif;
+  --font-family: 'Open Sans', 'Roboto', sans-serif;
 
   /* Grid */
-  --container: 1200px;
+  --container: 340px;
   --columns: 12;
-  --gutter: 30px;
+  --gutter: 20px;
 }

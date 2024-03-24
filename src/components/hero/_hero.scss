@@ -1,4 +1,89 @@
 .hero {
-  height: 100vh;
-  background-image: url('./hero.jpeg');
+  padding-top: 134px;
+  min-height: 727px;
+  background-image: url('/hero.jpeg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include sm-block {
+    padding-top: 273px;
+  }
+
+  @include md-block {
+    padding-top: 215px;
+  }
+
+  @include lg-block {
+    height: 642px;
+  }
+
+  &__container {
+    @include md-block {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 48px;
+
+    .col {
+      font-size: 0;
+
+      @include sm-block {
+        grid-column: -1;
+      }
+    }
+
+    img {
+      width: 179px;
+
+      @include md-block {
+        width: 211px;
+      }
+
+      @include lg-block {
+        width: 276px;
+      }
+    }
+  }
+
+  &__wrapper {
+    padding-left: 6px;
+    margin-bottom: 70px;
+
+    @include md-block {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @include md-block {
+      .title {
+        margin-top: 58px;
+      }
+    }
+
+    @include lg-block {
+      .title {
+        font-size: 3.75rem;
+      }
+    }
+  }
+
+  &__socials {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    margin-bottom: 25px;
+
+    @include lg-block {
+      margin-bottom: 20px;
+    }
+  }
 }

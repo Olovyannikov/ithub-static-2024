@@ -25,6 +25,7 @@
     "typescript": "^5.4.3",
     "vite": "^5.2.0",
     "vite-plugin-image-optimizer": "^1.1.7",
+    "vite-plugin-svg-spriter": "^1.0.0",
     "vituum": "^1.1.0"
   },
   "overrides": {

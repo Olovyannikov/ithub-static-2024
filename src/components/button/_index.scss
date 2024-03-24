@@ -1,0 +1,22 @@
+.btn {
+  @include btn-reset;
+
+  display: block;
+  width: fit-content;
+  padding: 10px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  &.primary {
+    color: var(--color-white);
+    background-color: #fee856;
+
+    &:hover {
+      background-color: #fee334;
+      color: #e6e6e6;
+    }
+  }
+}
