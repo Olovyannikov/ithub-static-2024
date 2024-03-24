@@ -12,6 +12,7 @@
     "@types/node": "^20.11.30",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
+    "@vituum/vite-plugin-pug": "^1.1.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -24,7 +25,6 @@
     "typescript": "^5.4.3",
     "vite": "^5.2.0",
     "vite-plugin-image-optimizer": "^1.1.7",
-    "vite-plugin-pug": "^0.3.2",
-    "vite-plugin-webp-generator": "^0.0.5"
+    "vituum": "^1.1.0"
   }
 }

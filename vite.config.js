@@ -1,5 +1,6 @@
-import { defineConfig } from 'vite'
-import pugPlugin from 'vite-plugin-pug';
+import { defineConfig } from 'vite';
+import vituum from 'vituum';
+import pug from '@vituum/vite-plugin-pug';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 import path from 'path';
@@ -10,8 +11,21 @@ export default defineConfig(({ mode }) => {
     console.log({ mode });
 
     return {
+        base: mode === 'development' ? './' : '/ithub-static-2024',
         plugins: [
-            pugPlugin(undefined, { pagesUrl: './src/pug/pages/' }),
+            vituum({
+                imports: {
+                    filenamePattern: {
+                        '+.scss': 'src/scss',
+                    },
+                },
+            }),
+            pug({
+                root: './src',
+                options: {
+                    pretty: mode === 'production',
+                },
+            }),
             ViteImageOptimizer({
                 test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
                 exclude: undefined,
@@ -61,14 +75,10 @@ export default defineConfig(({ mode }) => {
                 },
                 cache: false,
                 cacheLocation: undefined,
-            })
+            }),
         ],
-        build: {
-            rollupOptions: {
-                input: {
-                    main: resolve(__dirname, 'index.html'),
-                },
-            },
-        }
-    }
+        server: {
+            host: true, open: true,
+        },
+    };
 });
