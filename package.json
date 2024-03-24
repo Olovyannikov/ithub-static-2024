@@ -26,5 +26,8 @@
     "vite": "^5.2.0",
     "vite-plugin-image-optimizer": "^1.1.7",
     "vituum": "^1.1.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.13.0"
   }
 }
