@@ -40,7 +40,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: var(--container);
+  max-width: calc(var(--container));
   margin: 0 auto;
 }
 

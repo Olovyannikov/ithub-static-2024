@@ -13,6 +13,11 @@ $columns: 12;
 [class^='col-'] {
   position: relative;
   width: 100%;
+  padding-inline: 9px;
+
+  &.full {
+    padding: 0;
+  }
 }
 
 @each $size in map-keys($breakpoints) {

@@ -1,5 +1,9 @@
-@import "title/index";
-@import "button/index";
+@import "ui/title/index";
+@import "ui/button/index";
+@import "ui/text/index";
+@import "ui/image/index";
 
-@import "hero/hero";
-@import "socials/socials";
+@import "entities/hero/hero";
+@import "entities/about/about";
+
+@import "widgets/socials/socials";

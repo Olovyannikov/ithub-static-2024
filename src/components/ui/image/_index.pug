@@ -1,0 +1,5 @@
+mixin image(src, width, height, className)
+
+    picture
+        source(srcSet=src.replace('.jpg', '.webp'), type="image/webp")
+        img(src=src, class='image ' + className, width=width, height=height)
